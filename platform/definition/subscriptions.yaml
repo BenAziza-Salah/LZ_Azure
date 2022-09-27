@@ -1,0 +1,38 @@
+subscriptions:
+  gitops:
+    caf_landingzone_branch: 2203.0
+
+  relative_destination_folder: level1/subscriptions
+
+  tfstate:
+    lz_key_name: subscriptions
+    tfstate: platform_subscriptions.tfstate
+    level: level1
+    identity_aad_key: cred_subscription_creation_platform
+    config_file: subscriptions.yaml
+    sub_template_folder: platform/level1/subscriptions
+    # Do not rename the tfstate_key_name
+    tfstate_key_name: subscriptions
+
+  resources:
+    landingzone:
+
+  subscriptions:
+    launchpad:
+      subscriptions:
+        launchpad:
+          name: Azure subscription 1
+          create_alias: false
+          subscription_id: a47470bb-c20e-4a9b-9de4-c9159775b333
+        identity:
+          name: Azure subscription 1
+          create_alias: false
+          subscription_id: a47470bb-c20e-4a9b-9de4-c9159775b333
+        connectivity:
+          name: Azure subscription 1
+          create_alias: false
+          subscription_id: a47470bb-c20e-4a9b-9de4-c9159775b333
+        management:
+          name: Azure subscription 1
+          create_alias: false
+          subscription_id: a47470bb-c20e-4a9b-9de4-c9159775b333
